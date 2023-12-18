@@ -1,0 +1,231 @@
+<!-- <div class="grid">
+    <div class="col-12 lg:col-3 xl:col-2">
+        <div class="card mb-0">
+            <div class="flex justify-content-center">
+                <div>
+                    <span class="block text-900 font-medium mb-3">Jobwork</span>
+                    <div class="text-900 font-medium text-xl">
+                        <p-dropdown [options]="jobwork" [autoDisplayFirst]="true" optionLabel="name" placeholder="Select"></p-dropdown>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 lg:col-3 xl:col-2">
+        <div class="card mb-0">
+            <div class="flex justify-content-center">
+                <div>
+                    <span class="block text-900 font-medium mb-3">Plant</span>
+                    <div class="text-900 font-medium text-xl">
+                        <p-dropdown [options]="plant" [autoDisplayFirst]="true" optionLabel="name" placeholder="Select"></p-dropdown>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 lg:col-3 xl:col-2">
+        <div class="card mb-0">
+            <div class="flex justify-content-center">
+                <div>
+                    <span class="block text-900 font-medium mb-3">Shopfloor</span>
+                    <div class="text-900 font-medium text-xl">
+                        <p-dropdown [options]="shopfloor" [autoDisplayFirst]="true" optionLabel="name" placeholder="Select"></p-dropdown>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 lg:col-3 xl:col-2">
+        <div class="card mb-0">
+            <div class="flex justify-content-center">
+                <div>
+                    <span class="block text-900 font-medium mb-3">Assembly Line</span>
+                    <div class="text-900 font-medium text-xl">
+                        <p-dropdown [options]="assembly_line" [autoDisplayFirst]="true" optionLabel="name" placeholder="Select"></p-dropdown>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 lg:col-3 xl:col-2">
+        <div class="card mb-0">
+            <div class="flex justify-content-center">
+                <div>
+                    <span class="block text-900 font-medium mb-3">Machine ID</span>
+                    <div class="text-900 font-medium text-xl">
+                        <p-dropdown [options]="machine_id" [autoDisplayFirst]="true" optionLabel="name" placeholder="Select"></p-dropdown>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 lg:col-3 xl:col-2">
+        <div class="card mb-0">
+            <div class="flex justify-content-center">
+                <div>
+                    <span class="block text-900 font-medium mb-3">Product ID</span>
+                    <div class="text-900 font-medium text-xl">
+                        <p-dropdown [options]="product_id" [autoDisplayFirst]="true" optionLabel="name" placeholder="Select"></p-dropdown>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div> -->
+
+
+
+<!-- <div class="grid" *ngIf="showElements === 'true'">
+    <div class="col-12">
+        <div class="card mb-0">
+            <div class="flex justify-content-between">
+                <div>
+                    <span class="block text-900 font-medium mb-3">Jobwork</span>
+                    <div class="text-900 font-medium text-xl">
+                        <p-dropdown [options]="jobwork" [autoDisplayFirst]="true" optionLabel="name" placeholder="Select"></p-dropdown>
+                    </div>
+                </div>
+                <div>
+                    <span class="block text-900 font-medium mb-3">Plant</span>
+                    <div class="text-900 font-medium text-xl">
+                        <p-dropdown [options]="plant" [autoDisplayFirst]="true" optionLabel="name" placeholder="Select"></p-dropdown>
+                    </div>
+                </div>
+                <div>
+                    <span class="block text-900 font-medium mb-3">Shopfloor</span>
+                    <div class="text-900 font-medium text-xl">
+                        <p-dropdown [options]="shopfloor" [autoDisplayFirst]="true" optionLabel="name" placeholder="Select"></p-dropdown>
+                    </div>
+                </div>
+                <div>
+                    <span class="block text-900 font-medium mb-3">Shopfloor</span>
+                    <div class="text-900 font-medium text-xl">
+                        <p-dropdown [options]="shopfloor" [autoDisplayFirst]="true" optionLabel="name" placeholder="Select"></p-dropdown>
+                    </div>
+                </div>
+                <div>
+                    <span class="block text-900 font-medium mb-3">Assembly Line</span>
+                    <div class="text-900 font-medium text-xl">
+                        <p-dropdown [options]="assembly_line" [autoDisplayFirst]="true" optionLabel="name" placeholder="Select"></p-dropdown>
+                    </div>
+                </div>
+                <div>
+                    <span class="block text-900 font-medium mb-3">Machine ID</span>
+                    <div class="text-900 font-medium text-xl">
+                        <p-dropdown [options]="machine_id" [autoDisplayFirst]="true" optionLabel="name" placeholder="Select"></p-dropdown>
+                    </div>
+                </div>
+                <div>
+                    <span class="block text-900 font-medium mb-3">Product ID</span>
+                    <div class="text-900 font-medium text-xl">
+                        <p-dropdown [options]="product_id" [autoDisplayFirst]="true" optionLabel="name" placeholder="Select"></p-dropdown>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+
+
+
+
+<div class="card" *ngIf="showElements === 'true'">
+    <div class="container-fluid col-12 mb-0">
+        <div class="grid mb-0">
+            <div class="col-md-12 mb-0">
+                <div class="title justify-content-center">
+                    <div class="col-auto">
+                        <app-shift></app-shift>
+                    </div>
+                    <div class="col-auto">
+                        <app-time></app-time>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="col-10 lg:col-8 xl:col-10 mb-0">
+                        <p-chart type="bar" [data]="barChart" [options]="barOptions"></p-chart>
+                    </div>
+                    <div class="col-2 lg:col-4 xl:col-2 gif-card mb-0">
+                        <img src="assets/layout/images/green.gif" alt="" width="99%" height="70px">
+                    </div>
+                </div>
+                <p-chart type="bar" [data]="bar2Chart" [options]="bar2Options"></p-chart>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="card mb-3">
+    <p-table [value]="machineWiseDataList" class="p-datatable-sm text-900" styleClass="p-datatable-sm p-datatable-gridlines" [tableStyle]="{ 'min-width': 'auto', 'font-size': 'small', 'color': 'black' }" [rows]="rows">
+        <ng-template pTemplate="caption">
+            <div class="flex justify-content-between flex-column sm:flex-row">
+                <div>
+                    <!-- <p-toggleButton (click)="toggleElements()" onLabel="Hide" offLabel="Show"></p-toggleButton> -->
+                    <p-selectButton [options]="stateOptions" [(ngModel)]="showElements" optionLabel="label" optionValue="value"></p-selectButton>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="header">
+          <tr class="text-size header-row">
+            <th scope="col">PRODUCT ID</th>
+            <th scope="col">SHIFT </th>
+            <th scope="col">M/C ON HOURS</th>
+            <th scope="col">M/C IDLE HOURS</th>
+            <th scope="col">ACTUAL</th>
+            <th scope="col">TARGET</th>
+            <th scope="col">PERFORMANCE</th>
+            <th scope="col">PRODUCTION SAULD</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-dataItem>
+          <tr class="text-size data-row text-900">
+            <td>AQUA 1000ml</td>
+            <td>{{ dataItem.time }}</td>
+            <td style="width: auto;">{{ dataItem.on_time }}</td>
+            <td style="width: auto;">{{ dataItem.idle_time }}</td>
+            <td>{{ dataItem.actual }}</td>
+            <td>{{ dataItem.target}}</td>
+            <td [ngStyle]="getBackgroundColorStyle(dataItem.performance)">{{ dataItem.performance }} %</td>
+            <td style="padding: 0em">
+                <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <button pButton pRipple icon="pi pi-pencil" (click)="editClick(dataItem)" (click)="display=true" class="p-button-info p-button-sm" style="margin: 0em; white-space: nowrap;"></button>
+                    <!-- <button type="button" class="btn btn-sm btn-info mr-1" data-toggle="modal" data-target="#staticBackdrop" (click)="editClick(dataItem)" data-backdrop="static"><i class="bi bi-pencil-square"></i></button> -->
+                </div>
+                </div>
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+</div>
+
+
+
+
+
+
+
+<!-- Modal Snippet -->
+<!-- <div class="modal fade" id="staticBackdrop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered" ><div class="modal-content"><div class="modal-header" ><h5 class="modal-title" id="exampleModalLabel">{{ModalTitle}}</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closeClick()"><span aria-hidden="true">&times;</span></button></div><div class="modal-body" style="width:100%; background-color: aliceblue;"><app-add-edit-prod-plan [prodplan]="prodplan" *ngIf="ActivateAddEditProdPlanComp" (prodPlanAdded)="onprodPlanAdded()"></app-add-edit-prod-plan></div></div></div></div> -->
+<p-dialog header="{{ ModalTitle }}" [(visible)]="display" [modal]="true" showEffect="fade" [style]="{width: '50vw'}" [breakpoints]="{'960px': '75vw'}">
+    <ng-template pTemplate="content">
+        <app-add-edit-prod-machinewise [prodmach]="prodmach" *ngIf="ActivateAddEditProductionMachineComp" (prodMachAdded)="onprodMachAdded()"></app-add-edit-prod-machinewise>
+    </ng-template>
+    <ng-template pTemplate="footer">
+        <button pButton icon="fa-solid fa-x" (click)="closeClick()" (click)="display=false" label="Close" class="p-button-outlined"></button>
+        <button pButton icon="fa-solid fa-floppy-disk" (click)="addProductionPlan()" *ngIf="prodplan.employee_id == null" label="Save" class="p-button-success"></button>
+        <button pButton icon="fa-solid fa-pencil" (click)="updateProductionPlan()" *ngIf="prodplan.employee_id!= null" label="Update" class="p-button-info"></button>
+    </ng-template>
+</p-dialog>

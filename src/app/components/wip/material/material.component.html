@@ -1,0 +1,37 @@
+
+<div [ngStyle]="{borderRadius: '1rem', background: 'linear-gradient(0deg, rgba(255, 255, 0, 0.5), rgba(255, 255, 0, 0.5)), linear-gradient(92.54deg, #FFFF00 47.88%, #FFFFFF 100.01%)', padding: '1em'}">
+<!-- <div [ngStyle]="{borderRadius: '1rem', background: 'yellow', padding: '1em'}"> -->
+
+    <div class="card title-card-with-time">
+        <h2 class="text-800 font-bold text-xl lg:text-2xl">Material Transaction</h2>
+        <!-- <h5 class="text-800 font-bold">{{ currentDate | date:'fullDate' }} - {{ currentDate | date:'shortTime' }}</h5> -->
+        <app-time></app-time>
+    </div>
+<div class="grid">
+    <div class="col-12 lg:col-6 xl:col-3" *ngFor="let item of MaterialList">
+        <div class="card mb-0 blue-bg">
+            <div class="flex justify-content-between mb-1">
+                <div>
+                    <span class="block font-medium mb-3">Department : {{ item.department }}</span>
+                    <!-- <div class="text-900 font-medium text-xl">152</div> -->
+                </div>
+            </div>
+            <div *ngFor="let transaction of item.transactions; let i = index">
+                <div class="card mb-0" [ngClass]="{'yellow-bg': i === 0, 'green-bg': i === 1}">
+                    <div class="flex justify-content-between align-items-center">
+                        <div class="font-small mr-6"><span>{{ transaction.input }}</span></div>
+                        <div><span>{{ transaction.output }}</span></div>
+                    </div>
+                </div>
+            </div>
+
+
+                <!-- <div class="card mb-0 green-bg text-white">
+                    <div class="flex justify-content-between align-items-center">
+                        <div class="font-small mr-6"><span>{{ transaction.input }}</span></div>
+                        <div><span>{{ transaction.output }}</span></div>
+                    </div>
+                </div> -->
+        </div>
+    </div>
+</div>
