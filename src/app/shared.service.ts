@@ -9,8 +9,8 @@ export class SharedService {
 
     // private APIUrl = 'http://localhost:8000';
 
-    // private APIUrl = 'http://49.205.199.15:8000';
-    private APIUrl = 'http://192.168.1.250:8000';
+    private APIUrl = 'http://49.205.199.15:8000';
+    // private APIUrl = 'http://192.168.1.250:8000';
 
   constructor(private http:HttpClient) { }
 
